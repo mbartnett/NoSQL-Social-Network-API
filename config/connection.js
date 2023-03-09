@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
+const { connect, connection } = require('mongoose');
 
-mongoose.connect(
+connect(
     process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/nosql-social-network-api",
     {
         useNewUrlParser: true,
@@ -8,6 +8,4 @@ mongoose.connect(
     }
 );
 
-mongoose.set("debug", true);
-
-module.exports = mongoose.connection;
+module.exports = connection;

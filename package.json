@@ -5,7 +5,7 @@
     "main": "server.js",
     "license": "MIT",
     "scripts": {
-        "start": "node index",
+        "start": "node server",
         "seed": "node utils/seed"
     },
     "dependencies": {
