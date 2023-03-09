@@ -5,8 +5,6 @@ const routes = require("./routes");
 const mongoose = require("mongoose");
 mongoose.set("debug", true);
 
-const dateFormat = require('./utils/dateFormat');
-
 const app = express();
 const PORT = process.env.PORT || 3001;
 

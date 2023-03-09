@@ -26,32 +26,81 @@ Delete thought
 Create reaction
 Delete reaction
 
-USERS
+EMOJIS:
+🦉
+☕️ 
+🚬 
+🍩 
+🌲 
+🕰️ 
+🔪 
+
+FRIENDS:
+
+http://localhost:3001/api/users/USER-ID/friends/FRIEND-ID
+
+USERS:
 
 [
 	{
 		"_id": "64093ce2ed0f4c2991966a6e",
 		"username": "laurapalmer",
 		"email": "laurapalmer@twinpeaks.com",
+		"thoughts": [],
+		"friends": [
+			"64093ce2ed0f4c2991966a6e"
+		],
+		"__v": 0,
+		"friendCount": 1
 	},
 	{
 		"_id": "64093ce2ed0f4c2991966a6d",
 		"username": "dalecooper",
 		"email": "dalecooper@twinpeaks.com",
+		"thoughts": [],
+		"friends": [],
+		"__v": 0,
+		"friendCount": 0
 	},
 	{
 		"_id": "64093ce2ed0f4c2991966a6f",
 		"username": "killerbob",
 		"email": "killerbob@twinpeaks.com",
+		"thoughts": [],
+		"friends": [],
+		"__v": 0,
+		"friendCount": 0
 	},
 	{
 		"_id": "64093ce2ed0f4c2991966a70",
 		"username": "lelandpalmer",
 		"email": "lelandpalmer@twinpeaks.com",
+		"thoughts": [],
+		"friends": [],
+		"__v": 0,
+		"friendCount": 0
+	},
+	{
+		"_id": "64096ea85313cc4f6535ac3a",
+		"username": "audreyhorne",
+		"email": "audreyhorne@twinpeaks.com",
+		"thoughts": [],
+		"friends": [],
+		"__v": 0,
+		"friendCount": 0
+	},
+	{
+		"_id": "64096eb45313cc4f6535ac3c",
+		"username": "loglady",
+		"email": "loglady@twinpeaks.com",
+		"thoughts": [],
+		"friends": [],
+		"__v": 0,
+		"friendCount": 0
 	}
 ]
 
-THOUGHTS
+THOUGHTS:
 
 {    
     "thoughtText": "Who killed Laura Palmer?",
@@ -73,3 +122,20 @@ THOUGHTS
 "username": "lelandpalmer"
 }
 
+{
+  "thoughtText": "I can't wait to go to One Eyed Jack's tonight!",
+  "username": "audreyhorne"
+}
+
+{
+    "thoughtText": "One day my log will have something to say about this. My log saw something that night.",
+    "username": "loglady"
+}
+
+REACTION:
+{
+    "reactionBody": "🌲",
+    "username": "dalecooper"
+}
+
+http://localhost:3001/api/users/64093ce2ed0f4c2991966a6e/friends/64093ce2ed0f4c2991966a6e

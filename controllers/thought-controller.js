@@ -1,5 +1,4 @@
 const { Thought, User } = require('../models');
-const moment = require('moment');
 
 const thoughtController = {
     getAllThoughts(req, res) {
@@ -53,10 +52,11 @@ const thoughtController = {
             )
             .catch((err) => res.status(500).json(err));
     },
+    
     addReaction(req, res) {
         Thought.findOneAndUpdate(
             { _id: req.params.thoughtId },
-            { $push: { reactions: req.body } },
+            { $push: { reactions: { reactionBody: req.body.reactionBody, username: req.body.username } } },
             { runValidators: true, new: true }
         )
             .then((thought) =>
@@ -65,7 +65,7 @@ const thoughtController = {
                     : res.json(thought)
             )
             .catch((err) => res.status(500).json(err));
-    },
+    }, 
 
     removeReaction(req, res) {
         Thought.findOneAndUpdate(
