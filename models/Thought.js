@@ -60,6 +60,10 @@ thoughtSchema.virtual("reactionCount").get(function () {
     return this.reactions.length;
 });
 
+thoughtSchema.virtual('createdAtFormatted').get(function () {
+    return moment(this.createdAt).format('MMMM Do YYYY, h:mm:ss a');
+});
+
 const Thought = model("Thought", thoughtSchema);
 
 module.exports = Thought;

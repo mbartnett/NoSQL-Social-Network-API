@@ -25,3 +25,51 @@ Delete thought
 
 Create reaction
 Delete reaction
+
+USERS
+
+[
+	{
+		"_id": "64093ce2ed0f4c2991966a6e",
+		"username": "laurapalmer",
+		"email": "laurapalmer@twinpeaks.com",
+	},
+	{
+		"_id": "64093ce2ed0f4c2991966a6d",
+		"username": "dalecooper",
+		"email": "dalecooper@twinpeaks.com",
+	},
+	{
+		"_id": "64093ce2ed0f4c2991966a6f",
+		"username": "killerbob",
+		"email": "killerbob@twinpeaks.com",
+	},
+	{
+		"_id": "64093ce2ed0f4c2991966a70",
+		"username": "lelandpalmer",
+		"email": "lelandpalmer@twinpeaks.com",
+	}
+]
+
+THOUGHTS
+
+{    
+    "thoughtText": "Who killed Laura Palmer?",
+    "username": "dalecooper"
+}
+
+{    
+    "thoughtText": "I can't believe Laura is gone. She was my best friend.",
+    "username": "laurapalmer"
+}
+
+{
+    "thoughtText": "The owls are not what they seem.",
+    "username": "killerbob"
+}
+
+{
+"thoughtText": "I can't believe my daughter is gone. It's like a nightmare.",
+"username": "lelandpalmer"
+}
+

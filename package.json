@@ -10,7 +10,7 @@
     },
     "dependencies": {
         "express": "^4.17.1",
-        "mongoose": "^6.0.13",
-        "moment": "^2.28.0"
+        "moment": "^2.29.4",
+        "mongoose": "^6.0.13"
     }
 }
