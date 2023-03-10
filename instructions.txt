@@ -102,6 +102,8 @@ USERS:
 
 THOUGHTS:
 
+
+
 {    
     "thoughtText": "Who killed Laura Palmer?",
     "username": "dalecooper"
@@ -113,7 +115,7 @@ THOUGHTS:
 }
 
 {
-    "thoughtText": "The owls are not what they seem.",
+    "thoughtText": "Head's up, tails up, run you scallywags. Night falls, morning calls, I'll catch you with my death bag.",
     "username": "killerbob"
 }
 
@@ -128,11 +130,14 @@ THOUGHTS:
 }
 
 {
-    "thoughtText": "One day my log will have something to say about this. My log saw something that night.",
+    "thoughtText": "The owls are not what they seem.",
     "username": "loglady"
 }
 
 REACTION:
+
+http://localhost:3001/api/thoughts/:thoughtId/reactions/
+
 {
     "reactionBody": "🌲",
     "username": "dalecooper"
