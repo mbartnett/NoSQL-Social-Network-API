@@ -1,0 +1,208 @@
+[EMOJIS: 🦉 ☕️ 🚬 🍩 🌲 🕰️ 🔪 ]
+
+BEFORE STARTING MAKE SURE dalecooper IS CHANGED BACK from agentdalecooper
+
+START
+
+Add friend (http://localhost:3001/api/users/:userId/friends/:friendId)
+http://localhost:3001/api/users/640bdbfec67f66f4ffb3d824/friends/64093ce2ed0f4c2991966a6f (Laura Palmer, Killer Bob)
+
+Get all users (Laura Palmer)
+http://localhost:3001/api/users
+
+Remove friend (http://localhost:3001/api/users/:userId/friends/:friendId)
+http://localhost:3001/api/users/640bdbfec67f66f4ffb3d824/friends/64093ce2ed0f4c2991966a6f (Laura Palmer, Killer Bob)
+
+----------
+
+Get all users (Laura Palmer)
+http://localhost:3001/api/users
+
+Get user by id (http://localhost:3001/api/users/:userId)
+http://localhost:3001/api/users/64093ce2ed0f4c2991966a6d (Dale Cooper)
+
+Create user
+http://localhost:3001/api/users
+
+	{
+		"_id": "64096ea85313cc4f6535ac3a",
+		"username": "audreyhorne",
+		"email": "audreyhorne@twinpeaks.com"
+	}
+
+Get all users (Audrey Horne)
+http://localhost:3001/api/users    
+
+Update user (http://localhost:3001/api/users/:userId)
+	{
+		"username": "agentdalecooper",
+		"email": "agentdalecooper@twinpeaks.com"
+	}
+
+Get all users (Dale Cooper)
+http://localhost:3001/api/users
+
+Delete user (http://localhost:3001/api/users/:userId)
+http://localhost:3001/api/users/64096ea85313cc4f6535ac3a (Audrey Horne)
+
+Get all users (Audrey Horne)
+http://localhost:3001/api/users    
+
+----------
+
+Get all thoughts
+http://localhost:3001/api/thoughts/
+Get thought by id
+http://localhost:3001/api/thoughts/:thoughtId
+Create thoughts
+http://localhost:3001/api/thoughts/
+Update thought
+http://localhost:3001/api/thoughts/:thoughtId
+Delete thought
+http://localhost:3001/api/thoughts/:thoughtId
+
+----------
+
+Add reaction
+http://localhost:3001/api/thoughts/:thoughtId/reactions/
+Remove reaction
+http://localhost:3001/api/thoughts/:thoughtId/reactions/
+
+
+DATABASE:
+
+USERS:
+
+[
+	{
+		"_id": "64093ce2ed0f4c2991966a6e",
+		"username": "laurapalmer",
+		"email": "laurapalmer@twinpeaks.com",
+		"thoughts": [],
+		"friends": [
+			"64093ce2ed0f4c2991966a6e"
+		],
+		"__v": 0,
+		"friendCount": 0
+	},
+	{
+		"_id": "64093ce2ed0f4c2991966a6d",
+		"username": "dalecooper",
+		"email": "dalecooper@twinpeaks.com",
+		"thoughts": [],
+		"friends": [],
+		"__v": 0,
+		"friendCount": 0
+	},
+	{
+		"_id": "64093ce2ed0f4c2991966a6f",
+		"username": "killerbob",
+		"email": "killerbob@twinpeaks.com",
+		"thoughts": [],
+		"friends": [],
+		"__v": 0,
+		"friendCount": 0
+	},
+	{
+		"_id": "64093ce2ed0f4c2991966a70",
+		"username": "lelandpalmer",
+		"email": "lelandpalmer@twinpeaks.com",
+		"thoughts": [],
+		"friends": [],
+		"__v": 0,
+		"friendCount": 0
+	},
+	{
+		"_id": "64096ea85313cc4f6535ac3a",
+		"username": "audreyhorne",
+		"email": "audreyhorne@twinpeaks.com",
+		"thoughts": [],
+		"friends": [],
+		"__v": 0,
+		"friendCount": 0
+	},
+	{
+		"_id": "64096eb45313cc4f6535ac3c",
+		"username": "loglady",
+		"email": "loglady@twinpeaks.com",
+		"thoughts": [],
+		"friends": [],
+		"__v": 0,
+		"friendCount": 0
+	}
+]
+
+THOUGHTS:
+
+[
+	{
+		"_id": "64096a71b7a264d26383ba4b",
+		"thoughtText": "I can't believe my daughter is gone. It's like a nightmare.",
+		"username": "lelandpalmer",
+		"createdAt": "2023-03-09T05:11:13.625Z",
+		"reactions": [],
+		"__v": 0,
+		"reactionCount": 0
+	},
+	{
+		"_id": "64096a79b7a264d26383ba4d",
+		"thoughtText": "I hope Bob doesn’t come tonight.",
+		"username": "laurapalmer",
+		"createdAt": "2023-03-09T05:11:21.999Z",
+		"reactions": [],
+		"__v": 0,
+		"reactionCount": 0
+	},
+	{
+		"_id": "64096a86b7a264d26383ba4f",
+		"thoughtText": "Who killed Laura Palmer?",
+		"username": "dalecooper",
+		"createdAt": "2023-03-09T05:11:34.384Z",
+		"reactions": [],
+		"__v": 0,
+		"reactionCount": 0
+	},
+	{
+		"_id": "64096f795313cc4f6535ac3f",
+		"thoughtText": "I can't wait to go to One-Eyed Jack's tonight!",
+		"username": "audreyhorne",
+		"createdAt": "2023-03-09T05:32:41.488Z",
+		"reactions": [],
+		"__v": 0,
+		"reactionCount": 0
+	},
+	{
+		"_id": "64096f795313cc4f6535ac40",
+		"thoughtText": "The owls are not what they seem.",
+		"username": "loglady",
+		"createdAt": "2023-03-09T05:32:41.495Z",
+		"__v": 0,
+		"reactions": [
+			{
+				"reactionBody": "🦉",
+				"username": "dalecooper",
+				"_id": "640978f244bac7d779dae082",
+				"reactionId": "640978f244bac7d779dae083",
+				"createdAt": "2023-03-09T06:13:06.782Z"
+			}
+		],
+		"reactionCount": 1
+	},
+	{
+		"_id": "640a722f899d1f3759d28aa8",
+		"thoughtText": "Head's up, tails up, run you scallywags. Night falls, morning calls, I'll catch you with my death bag.",
+		"username": "killerbob",
+		"createdAt": "2023-03-09T23:56:31.536Z",
+		"reactions": [
+			{
+				"reactionBody": "🚬",
+				"username": "dalecooper",
+				"_id": "640a756d7803ea397a57b44d",
+				"reactionId": "640a756d7803ea397a57b44e",
+				"createdAt": "2023-03-10T00:10:21.616Z"
+			}
+		],
+		"__v": 0,
+		"reactionCount": 1
+	}
+]
