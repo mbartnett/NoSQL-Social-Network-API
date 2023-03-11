@@ -2,7 +2,7 @@
 
 BEFORE STARTING MAKE SURE dalecooper IS CHANGED BACK from agentdalecooper
 
-START
+START THE APPLICATION SERVER ON VIDEO
 
 Add friend (http://localhost:3001/api/users/:userId/friends/:friendId)
 http://localhost:3001/api/users/640bdbfec67f66f4ffb3d824/friends/64093ce2ed0f4c2991966a6f (Laura Palmer, Killer Bob)
@@ -220,3 +220,10 @@ THOUGHTS:
 		"reactionCount": 0
 	}
 ]
+
+---------
+
+{
+		"thoughtText": "I can't wait to go to One-Eyed Jack's tonight!",
+		"username": "audreyhorne"
+}
