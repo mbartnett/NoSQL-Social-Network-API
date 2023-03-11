@@ -1,6 +1,10 @@
 # NoSQL-Social-Network-API
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![Node.js](https://img.shields.io/badge/Node.js-v16.13.2-green.svg)](https://nodejs.org/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![Express.js](https://img.shields.io/badge/Express.js-v4.17.1-blue.svg)](https://expressjs.com/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![MongoDB](https://img.shields.io/badge/MongoDB-v5.1-green.svg)](https://www.mongodb.com/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![Mongoose](https://img.shields.io/badge/Mongoose-v6.1.6-blue.svg)](https://mongoosejs.com/)
 
 ## Description
 
