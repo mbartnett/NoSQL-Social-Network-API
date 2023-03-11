@@ -52,39 +52,61 @@ http://localhost:3001/api/users
 
 Get all thoughts
 http://localhost:3001/api/thoughts/
-Get thought by id
-http://localhost:3001/api/thoughts/:thoughtId
-Create thoughts
+
+Get thought by id (http://localhost:3001/api/thoughts/:thoughtId)
+http://localhost:3001/api/thoughts/64096a79b7a264d26383ba4d (Laura Palmer)
+
+Create thoughts (http://localhost:3001/api/thoughts/)
+
+{
+	"_id": "640be18fd4b65e0fb1d5c05e",
+	"username": "agentdalecooper",
+	"thoughtText": "You know, this is a fine cup of coffee."
+}
+
+Get all thoughts (Agent Dale Cooper, coffee)
 http://localhost:3001/api/thoughts/
-Update thought
-http://localhost:3001/api/thoughts/:thoughtId
-Delete thought
-http://localhost:3001/api/thoughts/:thoughtId
+
+Update thought (http://localhost:3001/api/thoughts/:thoughtId)
+http://localhost:3001/api/thoughts/640be18fd4b65e0fb1d5c05e
+
+{
+    "thoughtText": "You know, this is - excuse me - a damn fine cup of coffee."
+}
+
+Get all thoughts (Agent Dale Cooper, coffee)
+http://localhost:3001/api/thoughts/
+
+Delete thought (http://localhost:3001/api/thoughts/:thoughtId)
+http://localhost:3001/api/thoughts/640be18fd4b65e0fb1d5c05e (Agent Dale Cooper, coffee)
+
+Get all thoughts (Agent Dale Cooper, coffee)
+http://localhost:3001/api/thoughts/
 
 ----------
 
-Add reaction
-http://localhost:3001/api/thoughts/:thoughtId/reactions/
-Remove reaction
-http://localhost:3001/api/thoughts/:thoughtId/reactions/
+Add reaction (http://localhost:3001/api/thoughts/:thoughtId/reactions/)
+http://localhost:3001/api/thoughts/64096a79b7a264d26383ba4d/reactions/
 
+{
+	"username": "killerbob",
+	"reactionBody": "🔪"
+}
+
+Get all thoughts (Laura Palmer)
+http://localhost:3001/api/thoughts/
+
+Remove reaction (http://localhost:3001/api/thoughts/:thoughtId/reactions/)
+http://localhost:3001/api/thoughts/64096a79b7a264d26383ba4d/reactions/
+
+Get all thoughts (Laura Palmer)
+http://localhost:3001/api/thoughts/
 
 DATABASE:
 
 USERS:
 
 [
-	{
-		"_id": "64093ce2ed0f4c2991966a6e",
-		"username": "laurapalmer",
-		"email": "laurapalmer@twinpeaks.com",
-		"thoughts": [],
-		"friends": [
-			"64093ce2ed0f4c2991966a6e"
-		],
-		"__v": 0,
-		"friendCount": 0
-	},
 	{
 		"_id": "64093ce2ed0f4c2991966a6d",
 		"username": "dalecooper",
@@ -113,18 +135,18 @@ USERS:
 		"friendCount": 0
 	},
 	{
-		"_id": "64096ea85313cc4f6535ac3a",
-		"username": "audreyhorne",
-		"email": "audreyhorne@twinpeaks.com",
+		"_id": "64096eb45313cc4f6535ac3c",
+		"username": "loglady",
+		"email": "loglady@twinpeaks.com",
 		"thoughts": [],
 		"friends": [],
 		"__v": 0,
 		"friendCount": 0
 	},
 	{
-		"_id": "64096eb45313cc4f6535ac3c",
-		"username": "loglady",
-		"email": "loglady@twinpeaks.com",
+		"_id": "640bdbfec67f66f4ffb3d824",
+		"username": "laurapalmer",
+		"email": "laurapalmer@twinpeaks.com",
 		"thoughts": [],
 		"friends": [],
 		"__v": 0,
@@ -193,16 +215,8 @@ THOUGHTS:
 		"thoughtText": "Head's up, tails up, run you scallywags. Night falls, morning calls, I'll catch you with my death bag.",
 		"username": "killerbob",
 		"createdAt": "2023-03-09T23:56:31.536Z",
-		"reactions": [
-			{
-				"reactionBody": "🚬",
-				"username": "dalecooper",
-				"_id": "640a756d7803ea397a57b44d",
-				"reactionId": "640a756d7803ea397a57b44e",
-				"createdAt": "2023-03-10T00:10:21.616Z"
-			}
-		],
+		"reactions": [],
 		"__v": 0,
-		"reactionCount": 1
+		"reactionCount": 0
 	}
 ]
