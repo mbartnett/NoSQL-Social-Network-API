@@ -31,7 +31,7 @@ const reactionSchema = new Schema(
             transform: (doc, ret) => {
                 ret.createdAt = moment(ret.createdAt).format('MM-DD-YYYY, hh:mm:ss A');
                 return ret;
-                },
+            },
         },
         id: false,
     }
@@ -54,6 +54,10 @@ const thoughtSchema = new Schema(
             type: String,
             required: true,
         },
+        user: {
+            type: Schema.Types.ObjectId,
+            ref: 'User'
+        },
         reactions: [reactionSchema],
     },
     {
@@ -63,11 +67,18 @@ const thoughtSchema = new Schema(
             transform: (doc, ret) => {
                 ret.createdAt = moment(ret.createdAt).format('MM-DD-YYYY, hh:mm:ss A');
                 return ret;
-                },
+            },
         },
         id: false,
     }
 );
+
+// thoughtSchema.pre('save', async function (next) {
+//     const user = await User.findById(this.userId);
+//     this.username = user.username;
+//     this.userId = user._id;
+//     next();
+// });
 
 thoughtSchema.virtual("reactionCount").get(function () {
     return this.reactions.length;

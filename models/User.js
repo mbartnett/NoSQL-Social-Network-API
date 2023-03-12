@@ -42,10 +42,24 @@ userSchema.virtual("friendCount").get(function () {
 
 userSchema.pre('remove', function (next) {
   console.log("Removing user and associated thoughts...");
-  Thought.deleteMany({ _id: { $in: this.thoughts } })
+  Thought.deleteMany({ userId: this._id })
     .then(() => next())
     .catch(next);
 });
+
+// userSchema.pre('remove', function (next) {
+//   console.log("Removing user and associated thoughts...");
+//   Thought.deleteMany({ _id: { $in: this.thoughts } })
+//     .then(() => next())
+//     .catch(next);
+// });
+
+// userSchema.pre('remove', function (next) {
+//   console.log("Removing user and associated thoughts...");
+//   Thought.deleteMany({ username: this.username })
+//     .then(() => next())
+//     .catch(next);
+// });
 
 const User = model("User", userSchema);
 
