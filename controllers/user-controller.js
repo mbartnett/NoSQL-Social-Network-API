@@ -59,24 +59,6 @@ const UserController = {
             .catch((err) => res.status(500).json(err));
     },
 
-    // deleteUser(req, res) {
-    //     const { username } = req.params;
-
-    //     User.findOneAndDelete({ username })
-    //         .then((user) => {
-    //             if (!user) {
-    //                 return res.status(404).json({ message: 'No user found with this username!' });
-    //             }
-
-    //             return Thought.deleteMany({ username })
-    //                 .then(() => {
-    //                     console.log('Thoughts associated with user deleted successfully');
-    //                     return res.json({ message: 'User and associated thoughts deleted successfully!' });
-    //                 });
-    //         })
-    //         .catch((err) => res.status(500).json(err));
-    // },
-
     addFriend(req, res) {
         User.findOneAndUpdate(
             { _id: req.params.userId },

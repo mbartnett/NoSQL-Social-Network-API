@@ -58,6 +58,11 @@ const thoughtSchema = new Schema(
             type: Schema.Types.ObjectId,
             ref: 'User'
         },
+        userId: {
+            type: Schema.Types.ObjectId,
+            ref: 'User',
+            required: true
+        },
         reactions: [reactionSchema],
     },
     {
@@ -73,11 +78,16 @@ const thoughtSchema = new Schema(
     }
 );
 
-// thoughtSchema.pre('save', async function (next) {
-//     const user = await User.findById(this.userId);
-//     this.username = user.username;
-//     this.userId = user._id;
-//     next();
+// thoughtSchema.pre('remove', function (next) {
+//     console.log('Removing thought and associated reactions...');
+
+//     this.model('User')
+//         .findByIdAndUpdate(this.userId, { $pull: { thoughts: this._id } })
+//         .then(() => {
+//             this.model('Reaction').deleteMany({ thoughtId: this._id });
+//         })
+//         .then(() => next())
+//         .catch(next);
 // });
 
 thoughtSchema.virtual("reactionCount").get(function () {
