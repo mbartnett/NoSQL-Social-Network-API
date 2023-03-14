@@ -111,46 +111,26 @@ USERS:
 		"_id": "64093ce2ed0f4c2991966a6d",
 		"username": "dalecooper",
 		"email": "dalecooper@twinpeaks.com",
-		"thoughts": [],
-		"friends": [],
-		"__v": 0,
-		"friendCount": 0
 	},
 	{
 		"_id": "64093ce2ed0f4c2991966a6f",
 		"username": "killerbob",
 		"email": "killerbob@twinpeaks.com",
-		"thoughts": [],
-		"friends": [],
-		"__v": 0,
-		"friendCount": 0
 	},
 	{
 		"_id": "64093ce2ed0f4c2991966a70",
 		"username": "lelandpalmer",
 		"email": "lelandpalmer@twinpeaks.com",
-		"thoughts": [],
-		"friends": [],
-		"__v": 0,
-		"friendCount": 0
 	},
 	{
 		"_id": "64096eb45313cc4f6535ac3c",
 		"username": "loglady",
 		"email": "loglady@twinpeaks.com",
-		"thoughts": [],
-		"friends": [],
-		"__v": 0,
-		"friendCount": 0
 	},
 	{
 		"_id": "640bdbfec67f66f4ffb3d824",
 		"username": "laurapalmer",
 		"email": "laurapalmer@twinpeaks.com",
-		"thoughts": [],
-		"friends": [],
-		"__v": 0,
-		"friendCount": 0
 	}
 ]
 
