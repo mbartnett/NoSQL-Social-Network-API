@@ -20,11 +20,16 @@ const thoughtController = {
 
     createThought(req, res) {
         Thought.create(req.body)
-            .then((thought) => res.json(thought))
-            .catch((err) => {
-                console.log(err);
-                res.status(500).json(err);
-            });
+            .then(async (thought) => {
+                const user = await User.findOneAndUpdate({ username: req.body.username },
+                    { $push: { thoughts: { _id: thought._id } } });
+
+                res.json(thought)
+            })
+        // .catch((err) => {
+        //     console.log(err);
+        //     res.status(500).json(err);
+        // });
     },
 
     updateThought(req, res) {

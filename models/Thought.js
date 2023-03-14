@@ -37,7 +37,6 @@ const reactionSchema = new Schema(
     }
 );
 
-
 const thoughtSchema = new Schema(
     {
         thoughtText: {
@@ -58,11 +57,11 @@ const thoughtSchema = new Schema(
             type: Schema.Types.ObjectId,
             ref: 'User'
         },
-        userId: {
-            type: Schema.Types.ObjectId,
-            ref: 'User',
-            required: true
-        },
+        // userId: {
+        //     type: Schema.Types.ObjectId,
+        //     ref: 'User',
+        //     required: true
+        // },
         reactions: [reactionSchema],
     },
     {
