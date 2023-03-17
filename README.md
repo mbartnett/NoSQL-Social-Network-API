@@ -37,7 +37,7 @@ Here are the steps to get started:
 ## Usage
 
 ![NoSQL Social Network API](./assets/images/NoSQL-Social-Network-API.png)<br><br>
-[Video: NoSQL Social Network API](TK)
+[Video: NoSQL Social Network API](https://drive.google.com/file/d/1K_X2keWHsdJkchZevZl82nCT2N-3Kqum/view)
 
 ## License
 
